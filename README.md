@@ -23,18 +23,18 @@ All tools are open source and available on most Linux distributions.
 
 ## Structure
 
-```
-00-foundation/   — Core concepts: how SDR works, spectrum overview, hardware setup, antennas
-01-explorations/ — Guided hands-on sessions (FM, airband, APRS, IoT sensors, signal analysis, ham repeaters)
-02-projects/     — Longer-form setups that produce a persistent data stream or service
-reference/       — Per-tool reference + local signal frequency index
-```
+| Directory | Contents |
+|-----------|----------|
+| [`00-foundation/`](00-foundation/) | Core concepts: how SDR works, spectrum overview, hardware setup, antennas |
+| [`01-explorations/`](01-explorations/) | Guided hands-on sessions (FM, airband, APRS, IoT sensors, signal analysis, ham repeaters) |
+| [`02-projects/`](02-projects/) | Longer-form setups that produce a persistent data stream or service |
+| [`reference/`](reference/) | Per-tool reference + local signal frequency index |
 
-**Start here:** `00-foundation/01-how-sdr-works.md`
+**Start here:** [`00-foundation/01-how-sdr-works.md`](00-foundation/01-how-sdr-works.md)
 
 ## Local Signals
 
-The `reference/memphis-signals.md` file contains a frequency index for Memphis, TN (KMEM airport, NOAA weather radio, APRS, local ham repeaters, ISM band). If you're not in Memphis, you can use it as a template and substitute your local frequencies via [AirNav](https://www.airnav.com), [RadioReference](https://www.radioreference.com), and [RepeaterBook](https://www.repeaterbook.com).
+The [`reference/memphis-signals.md`](reference/Memphis%20Signals%20Reference.md) file contains a frequency index for Memphis, TN (KMEM airport, NOAA weather radio, APRS, local ham repeaters, ISM band). If you're not in Memphis, you can use it as a template and substitute your local frequencies via [AirNav](https://www.airnav.com), [RadioReference](https://www.radioreference.com), and [RepeaterBook](https://www.repeaterbook.com).
 
 ## Notes
 

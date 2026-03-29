@@ -1,7 +1,9 @@
 # SDR Assistant Context
 
 ## Hardware
-- Dongle: RTL-SDR RTL2832U + Rafael Micro R820T2
+- Dongle: RTL-SDR Blog V3 (RTL2832U + Rafael Micro R820T2)
+  - Note: stock `rtl-sdr` driver (v2.0.2) misidentifies tuner as R820T; confirmed V3 via `rtl_biast`
+  - TCXO, bias-T, and HF direct sampling available
 - Tuning range: ~24–1766 MHz (hardware limit; software may show wider)
 - Current antenna: stock telescoping whip
 - Incoming antenna: ADS-B mag mount, 6 dBi, 900–1800 MHz + 978 MHz compatible (arriving ~2026-04-01)
