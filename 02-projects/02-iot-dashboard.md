@@ -89,3 +89,6 @@ systemctl --user stop rtl433-ha
 
 → [[01-explorations/04-iot-sensors]]
 → [[rtl_433]]
+
+---
+[< Previous: Project 01 — ADS-B Aircraft Map](./01-adsb-aircraft-map.md) | [Next: Project 03 — APRS Station >](./03-aprs-station.md)

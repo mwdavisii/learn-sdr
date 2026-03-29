@@ -40,3 +40,6 @@ FM broadcast is the loudest, widest signal you'll see. It's impossible to miss o
 ## What to Try Next
 → [[02-airband-voice]] — AM demodulation at KMEM
 → [[SDR++Brown]] — SDR++Brown settings reference
+
+---
+[< Previous: Antenna Guide](../00-foundation/04-antenna-guide.md) | [Next: Exploration 02 — Airband Voice >](./02-airband-voice.md)

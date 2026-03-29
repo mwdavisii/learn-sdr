@@ -60,3 +60,6 @@ This shows the raw pulse timing, which can help identify the protocol.
 ## What to Try Next
 → [[02-projects/02-iot-dashboard]] — push decoded sensors to Home Assistant via MQTT
 → [[rtl_433]] — full rtl_433 flag reference
+
+---
+[< Previous: Exploration 03 — APRS](./03-aprs.md) | [Next: Exploration 05 — Signal Analysis >](./05-signal-analysis.md)

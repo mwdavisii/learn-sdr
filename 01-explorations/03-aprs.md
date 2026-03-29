@@ -41,3 +41,6 @@ If you see garbled output or no decodes:
 ## What to Try Next
 → [[reference/multimon-ng]]
 → [[02-projects/03-aprs-station]] — persistent pipeline with logging and map view
+
+---
+[< Previous: Exploration 02 — Airband Voice](./02-airband-voice.md) | [Next: Exploration 04 — IoT Sensors >](./04-iot-sensors.md)

@@ -52,3 +52,6 @@ In SDR++Brown, try switching the same airband signal between AM and NFM modes. A
 ## What to Try Next
 → [[03-aprs]] — decode data packets on 144.390 MHz
 → [[Memphis Signals Reference]] — full frequency table
+
+---
+[< Previous: Exploration 01 — FM & NOAA](./01-fm-and-noaa.md) | [Next: Exploration 03 — APRS >](./03-aprs.md)

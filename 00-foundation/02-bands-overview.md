@@ -31,3 +31,6 @@ Note: "❌ RTL-SDR" means below/above hardware range. Direct-sampling mods can e
 | 1090 MHz | ADS-B Mode S | — | Commercial aircraft; FedEx hub = constant |
 
 Full local frequency index: [[Memphis Signals Reference]]
+
+---
+[< Previous: How SDR Works](./01-how-sdr-works.md) | [Next: Hardware Setup >](./03-hardware-setup.md)

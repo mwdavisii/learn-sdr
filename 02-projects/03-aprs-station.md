@@ -83,3 +83,6 @@ Local digipeaters to watch for: search aprs.fi for active stations near your loc
 
 → [[01-explorations/03-aprs]]
 → [[reference/multimon-ng]]
+
+---
+[< Previous: Project 02 — IoT Dashboard](./02-iot-dashboard.md)

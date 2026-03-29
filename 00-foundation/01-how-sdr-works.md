@@ -30,3 +30,6 @@ FM stations are wide (~200 kHz). NOAA weather is narrow (~10 kHz). ADS-B is a ti
 The R820T2 tunes a 24–1766 MHz range, but the RTL2832U ADC runs at a fixed sample rate. At 2.4 MSPS you see 2.4 MHz of spectrum centered wherever you tune. To see more, move the center frequency.
 
 Think of it like a microscope: wide range, narrow field of view. SDR++ lets you zoom out by lowering sample rate (less bandwidth) or in by raising it (more bandwidth, up to hardware limits).
+
+---
+[Next: Bands Overview >](./02-bands-overview.md)

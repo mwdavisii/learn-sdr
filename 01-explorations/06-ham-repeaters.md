@@ -68,3 +68,6 @@ APRS at 144.390 MHz is also a ham VHF signal — covered in [[03-aprs]].
 → [[Memphis Signals Reference]] — full repeater frequency table
 → [[03-aprs]] — another 2m band signal (data instead of voice)
 → [[01-fm-and-noaa]] — NFM mode refresher (same demodulation used here)
+
+---
+[< Previous: Exploration 05 — Signal Analysis](./05-signal-analysis.md) | [Next: Project 01 — ADS-B Aircraft Map >](../02-projects/01-adsb-aircraft-map.md)

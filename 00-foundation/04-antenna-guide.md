@@ -33,3 +33,6 @@ This antenna is tuned for 978–1090 MHz. Use it for aircraft tracking only — 
 - Aim for the highest point you can reach with the cable length
 
 **Switching antennas:** The SMA connector on the dongle is the same for both. Just swap when you switch use cases. Running the ADS-B antenna on 144 MHz or 433 MHz will degrade performance.
+
+---
+[< Previous: Hardware Setup](./03-hardware-setup.md) | [Next: Exploration 01 — FM & NOAA >](../01-explorations/01-fm-and-noaa.md)

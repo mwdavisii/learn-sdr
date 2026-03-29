@@ -50,3 +50,6 @@ Once you have bandwidth, symbol rate, and a modulation guess:
 ## What to Try Next
 → [[reference/inspectrum]] — controls reference
 → [[reference/gqrx]] — alternative IQ recording tool
+
+---
+[< Previous: Exploration 04 — IoT Sensors](./04-iot-sensors.md) | [Next: Exploration 06 — Ham Repeaters >](./06-ham-repeaters.md)

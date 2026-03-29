@@ -55,3 +55,6 @@ Let it run for 1–2 minutes. Note the reported PPM error. Enter this value in S
 ## Note: inspectrum
 
 inspectrum is installed via `pacman`, not Nix. If you invoke it from a Nix shell, it may not be on PATH. Open a regular terminal (not `nix-shell`) to launch it.
+
+---
+[< Previous: Bands Overview](./02-bands-overview.md) | [Next: Antenna Guide >](./04-antenna-guide.md)

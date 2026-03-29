@@ -140,3 +140,6 @@ With one dongle you can only run one frequency at a time — stop the 1090 insta
 
 → [[reference/readsb]]
 → [[Memphis Signals Reference]]
+
+---
+[< Previous: Exploration 06 — Ham Repeaters](../01-explorations/06-ham-repeaters.md) | [Next: Project 02 — IoT Dashboard >](./02-iot-dashboard.md)
