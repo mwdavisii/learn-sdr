@@ -16,6 +16,12 @@ The stock whip is a quarter-wave monopole. Its optimal length depends on target 
 | 433 MHz ISM | ~17 cm | ~25% extension |
 | General scanning | ~16–20 cm | Reasonable compromise |
 
+**Ground plane:**
+The stock whip is a monopole — it technically requires a ground plane (counterpoise) to work correctly. Without one, the radiation pattern is asymmetric and signal levels are lower than they should be. In practice, it still *works* for FM/airband/APRS on a desk, but you're leaving performance on the table. Options:
+- Set the dongle on a metal surface (PC case, cookie sheet, metal shelf)
+- Attach 2–4 radial wires (~quarter-wave length for target frequency) to the SMA shell
+- Accept the degraded performance for casual scanning — it's often fine enough
+
 **Placement tips:**
 - Window sill > desk in middle of room
 - Keep USB cable away from the antenna (USB is noisy — use an extension cable to move the dongle away from the PC)

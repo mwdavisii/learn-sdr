@@ -23,7 +23,8 @@ See [[Memphis Signals Reference]] for frequency context and [[reference/readsb]]
 mkdir -p /tmp/readsb
 
 readsb \
-  --device-index 0 \
+  --device-type rtlsdr \
+  --device=0 \
   --freq 1090000000 \
   --gain -10 \
   --lat YOUR_LAT \
@@ -31,7 +32,7 @@ readsb \
   --net \
   --net-ro-port 30002 \
   --net-sbs-port 30003 \
-  --write-json /tmp/readsb/
+  --write-json=/tmp/readsb
 ```
 
 `--gain -10` is readsb's sentinel value for automatic gain — not literally -10 dB. Start here; tune manually if you're seeing a lot of noise or missed decodes.
@@ -54,25 +55,15 @@ tar1090 is not in nixpkgs. Run it directly from the repo:
 
 ```bash
 git clone https://github.com/wiedehopf/tar1090 ~/tools/tar1090
-cd ~/tools/tar1090
-python3 -m http.server 8080
+
+# tar1090 fetches from data/ relative to html/ — symlink the entire readsb output dir
+ln -s /tmp/readsb ~/tools/tar1090/html/data
+
+# Serve from html/, not the repo root (repo root gives a directory listing)
+python3 -m http.server 8080 --directory ~/tools/tar1090/html
 ```
 
-Then open `http://localhost:8080` in a browser. tar1090 will pull aircraft data from readsb's JSON output at `/tmp/readsb/` — but the default config expects it at a specific path. Check `config.js` in the cloned repo:
-
-```bash
-# See where tar1090 expects JSON
-grep -r 'url\|json' ~/tools/tar1090/config.js | head -20
-```
-
-If the path doesn't match `/tmp/readsb/`, either symlink or adjust the path in `config.js`. Alternatively, use the included `install.sh` for a full system install (sets up nginx + systemd service automatically):
-
-```bash
-# System install — reads from /run/readsb/ by convention
-sudo bash ~/tools/tar1090/install.sh
-```
-
-With the system install, point readsb's `--write-json` at `/run/readsb/` instead of `/tmp/readsb/`.
+Then open `http://localhost:8080`. tar1090 fetches `data/aircraft.json`, `data/receiver.json`, etc. — symlinking the whole directory covers all of them.
 
 ## Running Persistently
 
@@ -84,7 +75,7 @@ After=network.target
 
 [Service]
 ExecStartPre=/usr/bin/mkdir -p /tmp/readsb
-ExecStart=readsb --device-index 0 --freq 1090000000 --gain -10 --lat YOUR_LAT --lon YOUR_LON --net --net-ro-port 30002 --net-sbs-port 30003 --write-json /tmp/readsb/
+ExecStart=readsb --device-type rtlsdr --device=0 --freq 1090000000 --gain -10 --lat YOUR_LAT --lon YOUR_LON --net --net-ro-port 30002 --net-sbs-port 30003 --write-json=/tmp/readsb
 Restart=on-failure
 RestartSec=10
 
@@ -123,8 +114,8 @@ Limitation: only one frequency at a time per dongle. To monitor 978 MHz:
 
 ```bash
 # Run a separate readsb instance for UAT — swap frequency, different JSON dir
-readsb --device-index 0 --freq 978000000 --gain -10 --lat YOUR_LAT --lon YOUR_LON \
-  --net --net-ro-port 30004 --write-json /tmp/readsb-uat/
+readsb --device-type rtlsdr --device=0 --freq 978000000 --gain -10 --lat YOUR_LAT --lon YOUR_LON \
+  --net --net-ro-port 30004 --write-json=/tmp/readsb-uat
 ```
 
 With one dongle you can only run one frequency at a time — stop the 1090 instance first. Two dongles would allow simultaneous 1090 + 978 coverage. For now, treat UAT monitoring as a separate session, not a parallel feed.

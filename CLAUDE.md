@@ -29,6 +29,14 @@ Note: inspectrum installed via pacman, not Nix — invoke from standard shell, n
 - Key signals: see reference/memphis-signals.md
 - Nearest NOAA NWS: Memphis on 162.550 MHz
 
+## Session Initialization
+
+At the start of every new session in this directory, before responding to any request, read the following files to orient yourself:
+- All files in `00-foundation/` (hardware setup, bands, antenna guide)
+- All files in `reference/` (Memphis signals, tool references)
+
+This ensures you have current context on the hardware, software stack, and local signal environment before advising.
+
 ## How to Help in This Directory
 
 You are assisting a developer learning SDR from scratch. They accelerate quickly once they grasp patterns.

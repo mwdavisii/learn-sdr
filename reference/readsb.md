@@ -8,11 +8,12 @@ readsb is an ADS-B Mode S decoder. It listens on 1090 MHz, decodes aircraft tran
 
 | Flag | Purpose |
 |------|---------|
-| `--device-index 0` | Select first RTL-SDR |
+| `--device-type rtlsdr` | Must be set before other SDR flags |
+| `--device=0` | Select device by index (replaces `--device-index`) |
 | `--gain -10` | Auto gain (recommended starting point) |
 | `--freq 1090000000` | 1090 MHz (ADS-B Mode S) |
 | `--net` | Enable network output (Beast port 30005, SBS port 30003) |
-| `--json-dir /path` | Write JSON state files for tar1090 |
+| `--write-json=<dir>` | Write JSON state files for tar1090 |
 | `--write-json-every 1` | Update JSON every 1 second |
 | `--net-connector host,port,format` | Feed data to a remote host |
 
@@ -22,11 +23,12 @@ readsb is an ADS-B Mode S decoder. It listens on 1090 MHz, decodes aircraft tran
 mkdir -p /tmp/readsb
 
 readsb \
-  --device-index 0 \
+  --device-type rtlsdr \
+  --device=0 \
   --gain -10 \
   --freq 1090000000 \
   --net \
-  --json-dir /tmp/readsb \
+  --write-json=/tmp/readsb \
   --write-json-every 1
 ```
 

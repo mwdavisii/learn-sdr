@@ -24,7 +24,8 @@ FM broadcast is the loudest, widest signal you'll see. It's impossible to miss o
 ## Part 2: NOAA Weather Radio — 162.550 MHz
 
 **Tool:** SDR++Brown
-**Mode:** NFM (Narrowband FM)
+**Mode:** NFM (Narrowband FM) 
+	*Note: It's just FM if you're using SDR++Brown*
 **Frequency:** 162.550 MHz
 
 1. Tune to 162.550 MHz
